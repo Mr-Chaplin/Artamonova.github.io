@@ -1,0 +1,236 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Правило */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Стили */
+a{
+    color: inherit;
+}
+a:hover{
+    color: #54475b;
+    cursor: pointer;
+}
+
+/*Заголовки*/
+h1{
+    font-size: 50px;    
+    font-weight: 600;
+    line-height: 1.1;
+}
+h2{
+    font-size: 40px;    
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+h3{
+    font-size: 35px;    
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+h4{
+    font-size: 28px;    
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+h5{
+
+}
+
+h6{
+    font-size: 20px;    
+    font-weight: 600;
+    line-height: 1.1;
+}
+/* Автолаяют */
+.autolayout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    flex-shrink: 0;
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    flex-shrink: 1;
+}
+/* Общие стили для тела сайта */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#54475BA9;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    padding-top: 115px;
+}
+
+/* Контейнер */
+.container{
+    max-width:1230px ;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.container-main{
+    max-width:1230px ;
+    margin: 0 auto;
+    padding: 60px 30px;
+    background-color: #C4C4C43E ;
+}
+/* Раздел header*/
+
+.header{
+    padding: 30px 0px;
+    color: #fff;
+    background-color: #54475BA9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list{
+    display: flex;
+    gap: 20px;
+}
+
+/* UX Kid*/
+
+.menu-link{
+    padding: 5px;
+    border: 3px dashed #edc5ffa9;
+    border-radius: 5px;
+
+}
+.menu-link:hover{ /* Навидение  */
+    padding: 3px;
+    border: 3px dashed #c4a2d4a9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-link:active{/* Нажатие  */
+    padding: 3px;
+    border: 3px dashed #c4a2d4a9;
+    border-radius: 5px;
+
+}
+
+.menu-link:focus{ /* Выделение  */
+   
+}
+
+/* Раздел page-main */
+.page-main_content{
+    display:grid;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    row-gap: 10px;
+  
+}
+.page-card-right{
+    margin-left: 80px;
+    padding-left: 5px;
+    float: left;
+}
+
+
+
+.page-main-title{
+    margin-bottom: 40px;
+    padding-left: 30%;
+    
+    
+}
+
+
+
+.page-main_text_content{
+    padding: 10px 20px;
+    border: 7px solid #54475BA9; 
+    border-radius: 10px;
+
+    margin-bottom: 60px;
+}
+
+.page-main_abou-title,
+.teacher-info-item,
+.card-list,
+.teacher-contact-item:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.card-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.card-item{
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 3px solid #54475BA9;
+    border-radius: 15px;
+    width: 550px;
+    min-height: 160px;
+
+}
+
+.contact{
+    display: flex;
+    gap: 10px;
+}
+
+/* Раздел footer */
+.footer{
+    padding: 30px 0px;
+    color: #fff;
+    background-color: #54475BA9;   
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-list:not(:last-child){
+    padding-right: 15px;
+    border-right: 3px solid #fff ;
+}
+
+img{
+    position:absolute;
+    width: 80px;
+    height: 110px;
+}
+
+.rules li{
+    list-style: l;
+    margin-left: 20px;
+}
+.rules-numb li{
+    list-style:decimal;
+    margin-left: 20px;
+}
